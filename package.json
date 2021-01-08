@@ -12,7 +12,10 @@
     "deploy-kovan": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/kovan-blocks",
     "deploy-goerli": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/goerli-blocks",
     "deploy-ropsten": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ropsten-blocks",
-    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks"
+    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks",
+    "create:mainnet": "graph create blocklytics/tron-mainnet-blocks --node  https://thegraph-admin.oikos.cash --debug",
+    "deploy:mainnet": "graph deploy blocklytics/tron-mainnet-blocks --ipfs http://ipfs.oikos.cash --node https://thegraph-admin.oikos.cash --debug",
+    "remove:mainnet": "graph remove blocklytics/tron-mainnet-blocks --node https://thegraph-admin.oikos.cash"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",
